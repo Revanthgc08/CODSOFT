@@ -1,0 +1,28 @@
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Form validation
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+    
+    if (nameInput.value.trim() === '' || !isValidEmail(emailInput.value) || messageInput.value.trim() === '') {
+        alert('Please enter a valid name, email, and message.');
+        e.preventDefault();
+    }
+});
+
+// Helper function to validate email format
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
