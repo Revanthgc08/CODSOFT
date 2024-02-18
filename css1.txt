@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: hsl(0, 83%, 47%);
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+   
+}
+
+.header-container {
+    .logo {
+        width: 180px; /* Set the desired width for your logo */
+        height: auto; /* Maintain aspect ratio */
+        position: absolute;
+        top: 18%;
+        transform: translateY(-50%);
+        left: 20px; /* Adjust the left position as needed */
+    }
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.column {
+    flex: 1;
+    background-color: #fff;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}

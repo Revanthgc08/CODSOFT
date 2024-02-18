@@ -1,0 +1,12 @@
+// JavaScript to toggle dark mode
+const body = document.body;
+
+function toggleDarkMode() {
+    body.classList.toggle('dark-mode');
+}
+
+// JavaScript to toggle contact form visibility
+function toggleContactForm() {
+    const contactForm = document.getElementById('contact-form');
+    contactForm.classList.toggle('hidden');
+}
